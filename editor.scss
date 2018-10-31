@@ -5,3 +5,34 @@
 	color: #999;
 	text-align: right;
 }
+
+.wp-block-code,
+.wp-block-code .editor-plain-text {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.375;
+	direction: ltr;
+	text-align: left;
+	word-spacing: normal;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none; 
+	white-space: pre; 
+	white-space: pre-wrap; 
+	word-break: break-all;
+	word-wrap: break-word; 
+	background: #322931; 
+
+	&:focus {
+		color: #fff;
+	}
+}
+.editor-block-list__layout .editor-block-list__block ::selection {
+	    background-color: #ababab;
+}

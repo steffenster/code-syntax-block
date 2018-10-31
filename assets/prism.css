@@ -1,19 +1,26 @@
 /**
- * GHColors theme by Avi Aryan (http://aviaryan.in)
- * Inspired by Github syntax coloring
+ * color theme by prism-themes
+ * https://github.com/PrismJS/prism-themes
  */
 
+/*@import url(https://fonts.googleapis.com/css?family=Fira+Mono);*/
+/*
+ * Hopscotch
+ * by Jan T. Sott
+ * https://github.com/idleberg/Hopscotch
+ *
+ * This work is licensed under the Creative Commons CC0 1.0 Universal License
+ */ 
+ 
 code[class*="language-"],
 pre[class*="language-"] {
-    color: #393A34;
-    font-family: Menlo, Consolas, "Liberation Mono", monospace;
+    color: #ffffff;
+    /*font-family: "Fira Mono", Menlo, Monaco, "Lucida Console","Courier New", Courier, monospace;*/
+    font-size: 16px;
+    line-height: 1.375;
     direction: ltr;
     text-align: left;
-    white-space: pre;
     word-spacing: normal;
-    word-break: normal;
-    font-size: 14px;
-    line-height: 1.6em;
 
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -22,98 +29,111 @@ pre[class*="language-"] {
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
-    hyphens: none;
-}
-
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-    background: #b3d4fc;
-}
-
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-    background: #b3d4fc;
+    hyphens: none; 
+    white-space: pre; 
+    white-space: pre-wrap; 
+    word-break: break-all;
+    word-wrap: break-word; 
+    background: #322931; 
+    color: #b9b5b8;
 }
 
 /* Code blocks */
 pre[class*="language-"] {
     padding: 1em;
-    margin: .5em 0;
+    /*margin: .5em auto;*/
     overflow: auto;
-    border: 1px solid #dddddd;
-    background-color: white;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+pre[class*="language-"] ::selection {
+    background-color: #372b34;
+}
+
+pre[class*="language-"] ::-moz-selection { 
+    background-color: #161012;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-    padding: .2em;
-    padding-top: 1px; padding-bottom: 1px;
-    background: #f8f8f8;
-    border: 1px solid #dddddd;
+  padding: .1em;
+  border-radius: .3em;
+}
+.token.comment {
+    padding: 0;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: #999988; font-style: italic;
+  color: #797379;
 }
 
-.token.namespace {
-    opacity: .7;
+.token.punctuation {
+  color: #b9b5b8;
 }
 
-.token.string,
-.token.attr-value {
-    color: #e3116c;
-}
-.token.punctuation,
-.token.operator {
-    color: #393A34; /* no highlight */
+.namespace {
+  opacity: .7;
 }
 
-.token.entity,
-.token.url,
-.token.symbol,
-.token.number,
+.token.null,
+.token.operator,
 .token.boolean,
-.token.variable,
-.token.constant,
-.token.property,
-.token.regex,
-.token.inserted {
-    color: #36acaa;
+.token.number {
+  color: #fd8b19;
+} 
+.token.property { 
+  color: #fdcc59;
+}
+.token.tag { 
+  color: #1290bf;
+} 
+.token.string {
+  color: #149b93;
+} 
+.token.selector { 
+  color: #c85e7c;
+}
+.token.attr-name { 
+  color: #fd8b19;
+} 
+.token.entity,
+.token.url, 
+.language-css .token.string,
+.style .token.string {
+  color: #149b93;
 }
 
-.token.atrule,
+.token.attr-value,
 .token.keyword,
-.token.attr-name,
-.language-autohotkey .token.selector {
-    color: #00a4db;
+.token.control,
+.token.directive,
+.token.unit {
+  color: #8fc13e;
+} 
+
+.token.statement,
+.token.regex, 
+.token.atrule { 
+  color: #149b93;
 }
 
-.token.function,
-.token.deleted,
-.language-autohotkey .token.tag {
-    color: #9a050f;
-}
+.token.placeholder,
+.token.variable {
+  color: #1290bf;
+} 
 
-.token.tag,
-.token.selector,
-.language-autohotkey .token.keyword {
-    color: #00009f;
-}
+.token.important {
+  color: #dd464c;
+  font-weight: bold;
+} 
 
-.token.important,
-.token.function,
-.token.bold {
-    font-weight: bold;
-}
+.token.entity {
+  cursor: help;
+} 
 
-.token.italic {
-    font-style: italic;
-}
+pre > code.highlight {
+  outline: .4em solid red;
+  outline-offset: .4em;
+} 
