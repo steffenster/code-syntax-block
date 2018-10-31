@@ -35,10 +35,15 @@
 }
 
 .editor-block-list__layout {
-	.editor-block-list__block ::selection {
-		    background-color: #372b34;
+	.editor-block-list__block {
+		.wp-block-code ::selection {
+			background-color: #372b34;
+		}
 	}
-	.editor-block-list__block ::-moz-selection {
-		    background-color: #372b34;
+	
+	.editor-block-list__block {
+		.wp-block-code ::-moz-selection {
+			background-color: #372b34;
+		}
 	}
 }
