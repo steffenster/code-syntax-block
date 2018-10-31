@@ -24,7 +24,7 @@
 	-ms-hyphens: none;
 	hyphens: none; 
 	white-space: pre; 
-	white-space: pre-wrap; 
+	// white-space: pre-wrap; 
 	word-break: break-all;
 	word-wrap: break-word; 
 	background: #322931; 
@@ -33,6 +33,12 @@
 		color: #fff;
 	}
 }
-.editor-block-list__layout .editor-block-list__block ::selection {
-	    background-color: #ababab;
+
+.editor-block-list__layout {
+	.editor-block-list__block ::selection {
+		    background-color: #372b34;
+	}
+	.editor-block-list__block ::-moz-selection {
+		    background-color: #372b34;
+	}
 }
