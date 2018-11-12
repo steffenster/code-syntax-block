@@ -157,6 +157,6 @@ pre > code.highlight {
   .entry-content .wp-block-code code {
       display: block;
       max-width: 80%;
-      margin: 1rem calc(10% + 60px);
+      margin: 1rem calc(10% + 66px);
   }
 }
