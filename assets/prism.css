@@ -156,7 +156,7 @@ pre > code.highlight {
   }
   .entry-content .wp-block-code code {
       display: block;
-      max-width: calc(8 * (100vw / 12));
-      margin: 1rem calc(2 * (100vw / 12 )) 1rem;
+      max-width: 80%;
+      margin: 1rem calc(10% + 60px);
   }
 }
